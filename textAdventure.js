@@ -13,8 +13,8 @@ function montrerCarte(IndexDeLaCarte) {
     if (carte.id === IndexDeLaCarte) {
     textElement.innerHTML = carte.text;
 
-    //
-    optionButtonsElement.textContent = 'Salut';
+    // Tout retirer de nos boutons
+    optionButtonsElement.textContent = '';
 
     //Loop à travers les boutons dans la carte
     carte.options.forEach(function (choix){
