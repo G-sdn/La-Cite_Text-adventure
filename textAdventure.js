@@ -17,7 +17,7 @@ function montrerCarte(IndexDeLaCarte) {
     optionButtonsElement.textContent = '';
 
     //Loop à travers les boutons dans la carte
-    carte.options.forEach(function (choix){
+    carte.nouvellesOptions.forEach(function (choix){
 
         //créer le nouveau bouton
         const bouton = document.createElement("button");
@@ -46,8 +46,18 @@ const choixDeCartes = [
   //Cartes #1
   {
     id: 1,
-    text: "Le texte a été modifié",
-    options: ["Choix #1","Choix #2","Choix #3"],
+    text: "Le texte de la carte 1",
+    nouvellesOptions: ["Choix #1","Choix #2","Choix #3"],
+  },
+  {
+    id: 2,
+    text: "Le texte de la carte 2",
+    nouvellesOptions: ["Choix #1","Choix #2","Choix #3"],
+  },
+  {
+    id: 3,
+    text: "Le texte de la carte 3",
+    nouvellesOptions: ["Choix #1","Choix #2","Choix #3"],
   },
 ];
 
